@@ -1,0 +1,164 @@
+/* Reset default styles and set the font family */
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Work Sans", sans-serif;
+}
+
+/* Styles for the main container */
+.main {
+    padding: 2.4%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 24px 24px 32px 24px;
+  width: 300px;
+}
+
+/* Styles for the header section */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Styles for the logo */
+.logo img {
+  width: 70%;
+}
+
+/* Styles for the right section of the header */
+.right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Styles for the paragraph */
+.paragraph {
+  font-size: 14px;
+  font-weight: 400;
+  color: #413c6d;
+}
+
+/* Styles for the screen options */
+.screenOptions {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+/* Styles for each screen option */
+.screens {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+/* Styles for the text inside the screen options */
+.screens span {
+  font-weight: 600;
+  color: #928fab;
+}
+
+/* Hover styles for screen options */
+.screens:hover {
+  background-color: #cfcfcf56;
+  cursor: pointer;
+}
+
+/* Active styles for screen options */
+.active {
+  background-color: #cfcfcf56;
+}
+
+/* Styles for desktop icons */
+.desktop-icon {
+  color: #928fab;
+}
+
+/* Active styles for desktop icons */
+.activeIcon {
+  color: #120b48;
+}
+
+/* Styles for switch containers */
+.switchContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-transform: capitalize;
+  padding: 16px;
+  border-radius: 12px;
+  border: 1px solid #120b48;
+}
+
+/* Styles for the right section of switch containers */
+.switchContainer .right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  color: #100a42;
+}
+
+/* Styles for text inside switch containers */
+.switchContainer span {
+  font-weight: 600;
+}
+
+/* Styles for the toggle switch */
+.toggle-switch {
+  width: 50px;
+  height: 20px;
+  background-color: #b3b3b3;
+  border-radius: 17px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding: 4px;
+}
+
+/* Styles for the slider inside the toggle switch */
+.toggle-switch .slider {
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  border-radius: 50%;
+  transition: transform 0.5s cubic-bezier(0.075, 0.72, 0.165, 1);
+}
+
+/* Checked state styles for the toggle switch */
+.toggle-switch.checked {
+  background-color: #120b48;
+}
+
+/* Checked state styles for the slider inside the toggle switch */
+.toggle-switch.checked .slider {
+  transform: translateX(30px);
+}
+
+/* Styles for buttons */
+button {
+  background-color: #120b48;
+  color: #fafdff;
+  border-radius: 12px;
+  padding: 16px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  border: 0;
+  outline: none;
+}
+
+/* Hover styles for buttons */
+button:hover {
+  opacity: 0.95;
+}
+
+/* Active styles for buttons */
+button:active {
+  transform: scale(0.99);
+}

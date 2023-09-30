@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recording Extension</title>
+    <!-- Include any necessary CSS styles here -->
+    <link rel="stylesheet" href="popup.css">
+  </head>
+  <body>
+    <div class="main">
+      <div class="header">
+        <div class="logo">
+          <img src="images/icon.png" alt="logo" />
+        </div>
+        <div class="right">
+          <span
+            id="settingsIcon"
+            style="cursor: pointer; font-size: 20px; color: #120b48"
+            >⚙️</span
+          >
+          <span
+            id="closeTabIcon"
+            style="cursor: pointer; font-size: 25px; color: #b6b3c6"
+            >✖️</span
+          >
+        </div>
+      </div>
+      <p class="paragraph">
+        This extension helps you record and share help videos with ease.
+      </p>
+      <div class="screenOptions">
+        <div id="fullScreenOption" class="screens">
+          <span id="fullScreenIcon" class="desktop-icon" style="font-size: 45px"
+            >🖥️</span
+          >
+          <span>Full screen</span>
+        </div>
+        <div id="currentTabOption" class="screens">
+          <span id="currentTabIcon" class="desktop-icon" style="font-size: 45px"
+            >📋</span
+          >
+          <span>Current Tab</span>
+        </div>
+      </div>
+      <div class="switchContainer">
+        <div class="right">
+          <span id="videoIcon" style="color: #0f172a; font-size: 30px">📹</span>
+          <span>camera</span>
+        </div>
+        <div id="videoToggle" class="toggle-switch">
+          <div class="slider"></div>
+        </div>
+      </div>
+      <div class="switchContainer">
+        <div class="right">
+          <span id="audioIcon" style="color: #0f172a; font-size: 30px">🎙️</span>
+          <span>audio</span>
+        </div>
+        <div id="audioToggle" class="toggle-switch">
+          <div class="slider"></div>
+        </div>
+      </div>
+      <button id="recordingButton">Start Recording</button>
+      <div>
+        <a
+          id="recordedContentLink"
+          href="#"
+          target="_blank"
+          rel="noopener noreferrer"
+          style="display: none"
+          >View Recorded Content</a
+        >
+      </div>
+      <video
+        id="recordedVideo"
+        controls
+        width="400"
+        height="300"
+        style="display: none"
+      ></video>
+      <video
+        id="screenRecordingVideo"
+        controls
+        style="width: 100%; height: auto; display: none"
+      ></video>
+    </div>
+
+    <script src="popup.js"></script>
+  </body>
+</html>
